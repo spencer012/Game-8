@@ -35,8 +35,6 @@ public class LobbyManager : MonoBehaviourPunCallbacks {
 		lobby.SetActive(false);
 
 		readyB.onClick.AddListener(ReadyUp);
-
-		PhotonNetwork.LoadLevel
 	}
 
 	public override void OnConnectedToMaster() {
