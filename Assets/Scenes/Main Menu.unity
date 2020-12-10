@@ -665,7 +665,17 @@ PrefabInstance:
     - target: {fileID: 4509417425715579025, guid: 6470175c44ecf9043a82d0a01c7db139,
         type: 3}
       propertyPath: m_Text
-      value: Connect to Random Game
+      value: Start
+      objectReference: {fileID: 0}
+    - target: {fileID: 4509417425715579025, guid: 6470175c44ecf9043a82d0a01c7db139,
+        type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 48
+      objectReference: {fileID: 0}
+    - target: {fileID: 4509417425715579025, guid: 6470175c44ecf9043a82d0a01c7db139,
+        type: 3}
+      propertyPath: m_FontData.m_MaxSize
+      value: 48
       objectReference: {fileID: 0}
     - target: {fileID: 9025799139715522698, guid: 6470175c44ecf9043a82d0a01c7db139,
         type: 3}
@@ -730,7 +740,7 @@ PrefabInstance:
     - target: {fileID: 9025799139715522698, guid: 6470175c44ecf9043a82d0a01c7db139,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0.0000038146973
+      value: -16.07
       objectReference: {fileID: 0}
     - target: {fileID: 9025799139715522698, guid: 6470175c44ecf9043a82d0a01c7db139,
         type: 3}
@@ -740,7 +750,7 @@ PrefabInstance:
     - target: {fileID: 9025799139715522698, guid: 6470175c44ecf9043a82d0a01c7db139,
         type: 3}
       propertyPath: m_SizeDelta.y
-      value: 30
+      value: 62.14946
       objectReference: {fileID: 0}
     - target: {fileID: 9025799139715522698, guid: 6470175c44ecf9043a82d0a01c7db139,
         type: 3}
