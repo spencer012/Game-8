@@ -171,6 +171,7 @@ namespace Photon.Pun.Demo.Asteroids
             }
         }
 
+
         public override void OnPlayerPropertiesUpdate(Player targetPlayer, Hashtable changedProps)
         {
             if (playerListEntries == null)
