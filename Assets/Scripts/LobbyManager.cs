@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using System.Linq;
 
 public class LobbyManager : MonoBehaviourPunCallbacks {
 
@@ -26,7 +27,8 @@ public class LobbyManager : MonoBehaviourPunCallbacks {
 
 			buttons.SetActive(false);
 			connecting.SetActive(true);
-		} else {
+		}
+		else {
 			buttons.SetActive(true);
 			connecting.SetActive(false);
 		}
@@ -35,6 +37,7 @@ public class LobbyManager : MonoBehaviourPunCallbacks {
 		lobby.SetActive(false);
 
 		readyB.onClick.AddListener(ReadyUp);
+		startB.onClick.AddListener(StartGame);
 	}
 
 	public override void OnConnectedToMaster() {
@@ -79,19 +82,21 @@ public class LobbyManager : MonoBehaviourPunCallbacks {
 		PhotonNetwork.CurrentRoom.IsOpen = false;
 		PhotonNetwork.CurrentRoom.IsVisible = false;
 
-		//PhotonNetwork.LoadLevel(3);
+		PhotonNetwork.CurrentRoom.SetCustomProperties(new Hashtable { { MultiProperties.NUM_OF_PLAYERS, PhotonNetwork.CurrentRoom.PlayerCount } });
+
+		PhotonNetwork.LoadLevel(2);
 	}
 
 	public override void OnJoinedRoom() {
 		ChangeLocalScene(1);
 
-		Hashtable props = new Hashtable { {MultiProperties.READY, false} };
+		Hashtable props = new Hashtable { { MultiProperties.READY, false } };
 		PhotonNetwork.LocalPlayer.SetCustomProperties(props);
 
 		RefreshPlayerList();
 	}
 	void RefreshPlayerList() {
-		print("--------------------");
+		//print("--------------------");
 
 		Player[] playerList = PhotonNetwork.PlayerList;
 		for (int i = 0; i < 8; i++) {
@@ -99,16 +104,20 @@ public class LobbyManager : MonoBehaviourPunCallbacks {
 				playerLobbies[i].gameObject.SetActive(true);
 				playerLobbies[i].Display(playerList[i].NickName, (bool)GetValueOrDefault(playerList[i].CustomProperties, MultiProperties.READY, false));
 
-				foreach (System.Collections.DictionaryEntry entry in playerList[i].CustomProperties) {
-					print(entry.Key + ":" + entry.Value + "\t" + (bool)GetValueOrDefault(playerList[i].CustomProperties, MultiProperties.READY, false));
+				//foreach (System.Collections.DictionaryEntry entry in playerList[i].CustomProperties) {
+					//print(entry.Key + ":" + entry.Value + "\t" + (bool)GetValueOrDefault(playerList[i].CustomProperties, MultiProperties.READY, false));
+				//}
+				if (playerList[i].IsLocal) {
+					GameManager.spawnLocation = i;
 				}
+
 			}
 			else {
 				playerLobbies[i].gameObject.SetActive(false);
 			}
 		}
 		startB.interactable = CheckPlayersReady();
-		print("--------------------");
+		//print("--------------------");
 
 	}
 
@@ -116,7 +125,8 @@ public class LobbyManager : MonoBehaviourPunCallbacks {
 		object r;
 		if (h.TryGetValue(key, out r)) {
 			return r;
-		} else {
+		}
+		else {
 			return d;
 		}
 
@@ -124,7 +134,7 @@ public class LobbyManager : MonoBehaviourPunCallbacks {
 
 	public override void OnPlayerEnteredRoom(Player newPlayer) {
 		Player[] playerList = PhotonNetwork.PlayerList;
-		int i = playerLobbies.Length - 1;
+		int i = playerList.Length - 1;
 		playerLobbies[i].gameObject.SetActive(true);
 		playerLobbies[i].Display(playerList[i].NickName, (bool)GetValueOrDefault(playerList[i].CustomProperties, MultiProperties.READY, false));
 	}
