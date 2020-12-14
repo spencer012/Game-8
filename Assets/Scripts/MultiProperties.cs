@@ -3,5 +3,6 @@
 		LEVEL = "lv",
 		CHECKPOINT = "ch",
 		NUM_OF_PLAYERS = "np",
-		LAP = "lp";
+		LAP = "lp",
+		FINISHED = "fn";
 }

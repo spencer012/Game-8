@@ -28,6 +28,9 @@ public class LobbyManager : MonoBehaviourPunCallbacks {
 			buttons.SetActive(false);
 			connecting.SetActive(true);
 		}
+		else if (PhotonNetwork.InRoom) {
+			OnJoinedRoom();
+		}
 		else {
 			buttons.SetActive(true);
 			connecting.SetActive(false);

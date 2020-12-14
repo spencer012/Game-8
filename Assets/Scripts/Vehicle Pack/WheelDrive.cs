@@ -54,6 +54,13 @@ public class WheelDrive : MonoBehaviour, IPunObservable {
 
 	void OnEnable() {
 		transform.parent = GameManager.gameManager.players;
+		Invoke("RegisterCar", 0.05f);
+	}
+	void RegisterCar() {
+		GameManager.gameManager.RegisterCar(transform);
+	}
+	void OnDisable() {
+		GameManager.gameManager.UnRegisterCar(transform);
 	}
 
 	// This is a really simple approach to updating wheels.
