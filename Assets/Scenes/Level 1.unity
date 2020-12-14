@@ -296,6 +296,7 @@ GameObject:
   m_Component:
   - component: {fileID: 58874192}
   - component: {fileID: 58874193}
+  - component: {fileID: 58874194}
   m_Layer: 0
   m_Name: Sphere (5)
   m_TagString: Untagged
@@ -325,11 +326,23 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 58874191}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 44.2, y: 26.98, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &58874194
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 58874191}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df3c5ed4e766fb44b95ccebc0bb98272, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &64992975
 GameObject:
   m_ObjectHideFlags: 0
@@ -340,6 +353,7 @@ GameObject:
   m_Component:
   - component: {fileID: 64992976}
   - component: {fileID: 64992977}
+  - component: {fileID: 64992978}
   m_Layer: 0
   m_Name: Sphere
   m_TagString: Untagged
@@ -369,11 +383,23 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 64992975}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 44.2, y: 26.98, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &64992978
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 64992975}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df3c5ed4e766fb44b95ccebc0bb98272, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &72670080
 GameObject:
   m_ObjectHideFlags: 0
@@ -826,6 +852,7 @@ GameObject:
   m_Component:
   - component: {fileID: 254039725}
   - component: {fileID: 254039726}
+  - component: {fileID: 254039727}
   m_Layer: 0
   m_Name: Sphere (4)
   m_TagString: Untagged
@@ -855,11 +882,23 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 254039724}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 44.2, y: 26.98, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &254039727
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 254039724}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df3c5ed4e766fb44b95ccebc0bb98272, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &266585819
 GameObject:
   m_ObjectHideFlags: 0
@@ -1299,6 +1338,7 @@ GameObject:
   m_Component:
   - component: {fileID: 446464155}
   - component: {fileID: 446464152}
+  - component: {fileID: 446464153}
   m_Layer: 0
   m_Name: Sphere
   m_TagString: Untagged
@@ -1314,11 +1354,23 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 446464151}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 44.2, y: 26.98, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &446464153
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 446464151}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df3c5ed4e766fb44b95ccebc0bb98272, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &446464155
 Transform:
   m_ObjectHideFlags: 0
@@ -1836,6 +1888,7 @@ GameObject:
   m_Component:
   - component: {fileID: 612550645}
   - component: {fileID: 612550646}
+  - component: {fileID: 612550647}
   m_Layer: 0
   m_Name: Sphere (7)
   m_TagString: Untagged
@@ -1865,11 +1918,23 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 612550644}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 44.2, y: 26.98, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &612550647
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 612550644}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df3c5ed4e766fb44b95ccebc0bb98272, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &617312736
 GameObject:
   m_ObjectHideFlags: 0
@@ -1880,6 +1945,7 @@ GameObject:
   m_Component:
   - component: {fileID: 617312737}
   - component: {fileID: 617312738}
+  - component: {fileID: 617312739}
   m_Layer: 0
   m_Name: Sphere (2)
   m_TagString: Untagged
@@ -1909,11 +1975,23 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 617312736}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 44.2, y: 26.98, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &617312739
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 617312736}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df3c5ed4e766fb44b95ccebc0bb98272, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &627177949
 GameObject:
   m_ObjectHideFlags: 0
@@ -2300,6 +2378,7 @@ GameObject:
   m_Component:
   - component: {fileID: 830335109}
   - component: {fileID: 830335108}
+  - component: {fileID: 830335110}
   m_Layer: 0
   m_Name: Sphere (1)
   m_TagString: Untagged
@@ -2315,10 +2394,10 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 830335107}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 44.2, y: 26.98, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!4 &830335109
 Transform:
@@ -2334,6 +2413,18 @@ Transform:
   m_Father: {fileID: 673286203}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &830335110
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 830335107}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df3c5ed4e766fb44b95ccebc0bb98272, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &841690352
 GameObject:
   m_ObjectHideFlags: 0
@@ -2677,6 +2768,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1026264540}
   - component: {fileID: 1026264541}
+  - component: {fileID: 1026264542}
   m_Layer: 0
   m_Name: Sphere (3)
   m_TagString: Untagged
@@ -2706,11 +2798,23 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1026264539}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 44.2, y: 26.98, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1026264542
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1026264539}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df3c5ed4e766fb44b95ccebc0bb98272, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1103090674
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2943,6 +3047,10 @@ MonoBehaviour:
   spawns: {fileID: 739295663}
   checkpoints: {fileID: 673286203}
   players: {fileID: 841690353}
+  alert: {fileID: 966710175}
+  position: {fileID: 1804547486}
+  lap: {fileID: 245637094}
+  numOfLaps: 2
 --- !u!4 &1202013549
 Transform:
   m_ObjectHideFlags: 0
@@ -3262,6 +3370,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1458172429}
   - component: {fileID: 1458172430}
+  - component: {fileID: 1458172431}
   m_Layer: 0
   m_Name: Sphere (6)
   m_TagString: Untagged
@@ -3291,11 +3400,23 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1458172428}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 44.2, y: 26.98, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1458172431
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1458172428}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df3c5ed4e766fb44b95ccebc0bb98272, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1469181869
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -2,5 +2,6 @@
 	public static readonly string READY = "rd",
 		LEVEL = "lv",
 		CHECKPOINT = "ch",
-		NUM_OF_PLAYERS = "np";
+		NUM_OF_PLAYERS = "np",
+		LAP = "lp";
 }
