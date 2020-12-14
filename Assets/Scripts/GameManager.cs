@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using Photon.Pun;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviourPunCallbacks {
 
@@ -37,5 +38,10 @@ public class GameManager : MonoBehaviourPunCallbacks {
 
 	void Update() {
 
+	}
+
+	public void Exit() {
+		PhotonNetwork.LeaveRoom(false);
+		SceneManager.LoadScene(1);
 	}
 }
